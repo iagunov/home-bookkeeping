@@ -1,17 +1,18 @@
 <template>
-      <nav class="navbar orange lighten-1">
+      <nav class="navbar white lighten-1">
         <div class="nav-wrapper">
           <div class="navbar-left">
             <a href="#" @click.prevent="$emit('click')">
-              <i class="material-icons black-text">dehaze</i>
+              <i class="material-icons grey-text text-darken-2">dehaze</i>
             </a>
-            <span class="black-text">{{ date | date('datetime') }}</span>
+            <!-- <span class="grey-text text-darken-2">{{ date | date('time') }} </span> -->
+            <span class="grey-text text-darken-2">{{ date | date('date') }}</span>
           </div>
 
           <ul class="right hide-on-small-and-down">
             <li>
               <a
-                  class="dropdown-trigger black-text"
+                  class="dropdown-trigger grey-text text-darken-2"
                   href="#"
                   data-target="dropdown"
                   ref="dropdown"
@@ -47,8 +48,8 @@ export default {
     dropdown: null
   }),
   methods: {
-    logout() {
-      console.log('logout')
+    async logout() {
+      await this.$store.dispatch('logout')
       this.$router.push('/login?message=logout')
     }
   },

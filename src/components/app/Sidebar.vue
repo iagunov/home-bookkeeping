@@ -9,7 +9,7 @@
           :to="link.url"
           :exact="link.exact"
         >
-          <a href="#" class="waves-effect waves-orange pointer grey-text text-darken-2">{{ link.title }}</a>
+          <a href="#" class="waves-effect waves-black pointer grey-text text-darken-2">{{ link.title }}</a>
         </router-link>
       </ul>
 </template>
@@ -28,3 +28,11 @@ export default {
   })
 }
 </script>
+
+<style lang="scss">
+.sidenav {
+  background: linear-gradient(315deg, #e6e6e6, #ffffff);
+  box-shadow:  -20px -20px 60px #d9d9d9, 
+                20px 20px 60px #ffffff;
+}
+</style>

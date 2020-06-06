@@ -3,7 +3,7 @@
         <div class="nav-wrapper">
           <div class="navbar-left">
             <a href="#" @click.prevent="$emit('click')">
-              <i class="material-icons grey-text text-darken-2">dehaze</i>
+              <i class="material-icons grey-text text-darken-2">apps</i>
             </a>
             <!-- <span class="grey-text text-darken-2">{{ date | date('time') }} </span> -->
             <span class="grey-text text-darken-2">{{ date | date('date') }}</span>

@@ -1,5 +1,9 @@
 <template>
-  <form class="card auth-card" @submit.prevent="submitHandler">
+  <form class="card auth-card" 
+  style="
+  border-radius: 10px;
+  padding: 10px 10px 20px;"
+  @submit.prevent="submitHandler">
     <div class="card-content">
       <span class="card-title" style="text-align: center">Домашняя бухгалтерия</span>
       <div class="input-field">
@@ -57,19 +61,14 @@
       </p>
     </div>
     <div class="card-action">
-      <div>
-        <button
-            class="btn waves-effect waves-light auth-submit"
-            type="submit"
-        >
-          Зарегистрироваться
-          <i class="material-icons right">send</i>
-        </button>
-      </div>
+          <button
+              class="btn waves-effect light-blue darken-2 right" style="text-transform: none;"
+              type="submit"
+          > Регистрация
+          </button>
 
-      <p class="center">
-        Уже есть аккаунт?
-        <router-link to="/login">Войти!</router-link>
+      <p class="left light-blue-text text-darken-2">
+        <router-link class="light-blue-text text-darken-2 left" style="text-transform: none;" to="/login">Войти</router-link>
       </p>
     </div>
   </form>

@@ -11,9 +11,9 @@
       </div>
     </main>
 
-    <div class="fixed-action-btn">
+    <div class="fixed-action-btn" >
       <router-link class="btn-floating btn-large blue" to="/record">
-        <i class="large material-icons">add</i>
+        <i class="large material-icons grey-text text-darken-2">add</i>
       </router-link>
     </div>
   </div>
@@ -33,3 +33,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.btn-floating {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  32px 32px 64px #707070, 
+              -32px -32px 64px #ffffff;
+}
+</style>
